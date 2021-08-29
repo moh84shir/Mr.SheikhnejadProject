@@ -26,8 +26,13 @@ def shetab():
     bShet.grid(row=2, column=0)
 
     def shet():
-        tkinter.messagebox._show(
-            "شتاب", f"{float(EntryN.get()) / float(EntryG.get())}")
+        try:
+            tkinter.messagebox._show(
+                "شتاب", f"{float(EntryN.get()) / float(EntryG.get())}")
+
+        except:
+            tkinter.messagebox.showerror('مشکل', 'مشکلی وجود دارد. لطفا مقادیر وارد شده را بررسی کنید')
+
 
     window_shetab.mainloop()
 
@@ -56,8 +61,12 @@ def baraiand():
     bShet.grid(row=2, column=0)
 
     def bara():
-        tkinter.messagebox._show(
-            "برایند", f"{abs(abs(float(EntryG1.get())) - abs(float(EntryG2.get())))}")
+        try:
+            tkinter.messagebox._show(
+                "برایند", f"{abs(abs(float(EntryG1.get())) - abs(float(EntryG2.get())))}")
+
+        except:
+            tkinter.messagebox.showerror('مشکل', 'مشکلی وجود دارد. لطفا مقادیر وارد شده را بررسی کنید')
 
     window_baraiand.mainloop()
 
@@ -87,8 +96,12 @@ def gashtavar():
     bShet.grid(row=2, column=0)
 
     def gash():
-        tkinter.messagebox._show(
-            "گشتاور", f"{float(EntryG.get()) * float(EntryM.get())}")
+        try:
+            tkinter.messagebox._show(
+                "گشتاور", f"{float(EntryG.get()) * float(EntryM.get())}")
+
+        except:
+            tkinter.messagebox.showerror('مشکل', 'مشکلی وجود دارد. لطفا مقادیر وارد شده را بررسی کنید')
 
     window_gashtavar.mainloop()
 
