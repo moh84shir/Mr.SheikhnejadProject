@@ -33,7 +33,6 @@ def shetab():
         except:
             tkinter.messagebox.showerror('مشکل', 'مشکلی وجود دارد. لطفا مقادیر وارد شده را بررسی کنید')
 
-
     window_shetab.mainloop()
 
 
